@@ -14,7 +14,7 @@ function Topheader() {
   <input type="checkbox" id="nav-check" />
   <div className="nav-header">
     <div className="nav-title">
-      quicktv
+    <Link to='/'>quicktv</Link>
     </div>
   </div>
   <div className="nav-btn">

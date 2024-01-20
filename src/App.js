@@ -9,6 +9,9 @@ import Login from './pages/auth/Login'
 import Signup from './pages/auth/Signup'
 import Browse from './pages/Browse/Browse'
 import Upload from './pages/Upload/Upload';
+import axios from 'axios';
+console.log(process.env.REACT_APP_API_BASE_URL);
+
 
 function App() {
   return (

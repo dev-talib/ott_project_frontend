@@ -19,7 +19,7 @@ function Upload() {
   
     useEffect(() => {
         if(url){
-           axios.post('https://shrouded-dusk-10991.herokuapp.com/api/post/new', {
+           axios.post(`${process.env.REACT_APP_API_BASE_URL}/post/new`, {
                 video: url,
                 title: title,
                 description: body,
@@ -74,7 +74,7 @@ function Upload() {
     }
 
     const getCategory = async () => {
-        let res = await axios.get('http://localhost:4000/api/category/all')
+        let res = await axios.get('https://video-share-api.herokuapp.com/api/category/all')
         if(res.data){
            setCategories(res.data)
         }   

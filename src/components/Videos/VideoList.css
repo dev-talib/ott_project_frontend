@@ -1,4 +1,4 @@
-  #carousel{
+  .carousel {
     margin-top: -300px;
     z-index: 1;
   }
@@ -11,20 +11,20 @@
     display: flex;
     align-self: center;
    }
-   div.items:hover .item {
+    div.items:hover .item {
     opacity: 0.3;
    }
-   div.items:hover .item:hover {
+    div.items:hover .item:hover {
     opacity: 1;
    }
-   div.control-container {
+    div.control-container {
     height: 300px;
     position: absolute;
     width: 100%;
     overflow: hidden;
     box-sizing: border-box;
    }
-   div.container {
+    div.container {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -38,19 +38,19 @@
     flex-flow: row nowrap;
     justify-content: center;
    }
-   div.left-scroll {
+    div.left-scroll {
     left: 0;
    }
-   div.left-scroll i {
+    div.left-scroll i {
     transform: translate(-60%, -50%);
    }
-   div.right-scroll {
+    div.right-scroll {
     right: 0;
    }
-   div.right-scroll i {
+    div.right-scroll i {
     transform: translate(-40%, -50%);
    }
-   div.scroll {
+    div.scroll {
     position: absolute;
     display: inline-block;
     color: #f6f6f6;
@@ -63,13 +63,13 @@
     margin: 0 5px;
     z-index: 951;
    }
-   div.scroll i {
+    div.scroll i {
     font-size: 30px;
     position: relative;
     left: 50%;
     top: 50%;
    }
-   .item {
+    .item {
     position: relative;
     align-self: center;
     width: 300px;
@@ -79,30 +79,30 @@
     cursor: pointer;
     z-index: 899;
    }
-   .item:hover {
+    .item:hover {
     transform: scale(1.5);
     margin: 30px;
     opacity: 1;
     z-index: 950;
    }
-   .item:hover .opacity-none {
+    .item:hover .opacity-none {
     opacity: 1;
    }
-   .item .item-load-icon {
+    .item .item-load-icon {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
    }
-   .item .opacity-none {
+    .item .opacity-none {
     opacity: 0;
    }
-   .item .item-video {
+    .item .item-video {
     width: 300px;
     height: 200px;
     -o-object-fit: cover;
     object-fit: cover;
    }
-   .item .item-title {
+    .item .item-title {
     color: #f6f6f6;
     position: absolute;
     margin: 5px 0;
@@ -114,7 +114,7 @@
     background: rgba(0, 0, 0, 0.5);
     text-align: center;
    }
-   .item .item-description {
+    .item .item-description {
     color: #f6f6f6;
     font-size: 12px;
     position: absolute;
@@ -127,7 +127,7 @@
     margin: 5px 0;
     padding: 10px 0;
    }
-   .button {
+    .button {
     position: absolute;
     color: #f6f6f6;
     font-size: 30px;
@@ -139,13 +139,25 @@
     background-color: rgba(0, 0, 0, 0.7);
     transition: all 0.3s ease-in-out;
    }
-   .button i {
+    .button i {
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-35%, -55%);
     z-index: 950;
    }
-   .button:hover {
+    .button:hover {
     box-shadow: 0px 0px 50px #FFFFFF;
    }
+
+   .video-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  

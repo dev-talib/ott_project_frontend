@@ -19,7 +19,7 @@ function Watch() {
 
   function getVideo() {
     console.log('id:',id)
-    axios.get(`https://shrouded-dusk-10991.herokuapp.com/api/post/${id}`)
+    axios.get(`/post/${id}`)
     .then(res => {
         setVideo(res.data)
         console.log(res.data)
@@ -37,7 +37,7 @@ function Watch() {
             controls
             autoPlay
             title='video'
-            src={video.video}
+            src={`${process.env.REACT_APP_API_BASE_URL}/post/video/${id}`}
             thumb='thumb'
             subtitle='subtitle'
             description='description'

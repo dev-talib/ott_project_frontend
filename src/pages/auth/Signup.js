@@ -2,8 +2,10 @@ import React from 'react'
 import axios from 'axios'
 import './Signup.css'
 import {Link} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 
 function Signup() {
+  const navigate = useNavigate()  
   const [username, setUsername] = React.useState('')
   const [email, setEmail] = React.useState('')
   const [password, setPassword] = React.useState('')
@@ -13,16 +15,19 @@ function Signup() {
   const handleSubmit = (e) => {
       setLoading(true);
       e.preventDefault()
-      axios.post('https://shrouded-dusk-10991.herokuapp.com/api/auth/signup', {
+      axios.post(`${process.env.REACT_APP_API_BASE_URL}/auth/signup`, {
           username,
           email,
           password
       })
       .then(res => {
           console.log(res)
+          navigate('/')
+          alert("SignUp Complete!")
           setLoading(false);
       })
       .catch(err => {
+          alert(err)
           console.log(err)
       })
   }    

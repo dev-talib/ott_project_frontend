@@ -1,0 +1,27 @@
+.Browse{
+    /* width: 70%;
+    margin-left: auto;
+    margin-right: auto; */
+    padding: 50px;
+}
+
+.SearchBox{
+   width: 50%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 50px;
+} 
+
+.Browse .video-card{
+    height: 200px;
+    width: 300px;
+    display: inline;
+    margin: 15px;
+}
+
+
+.Browse .video-card img{
+    height: 200px;
+    width: 300px;
+    margin-top: 20px;
+}
